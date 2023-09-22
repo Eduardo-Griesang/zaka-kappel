@@ -51,8 +51,8 @@ const AboutTheBand = () => {
   }
 
   return (
-    <motion.div className="flex flex-col justify-center items-center pb-10 z-0">
-      <h2 className="py-5 font-body text-xl lg:py-10">Conheça a banda:</h2>
+    <motion.div className="flex flex-col justify-center items-center lg:pb-4 z-0">
+      <h2 className="py-5 font-body text-xl lg:py-14">Conheça a banda:</h2>
       <div className="flex flex-col lg:flex-row justify-center items-center gap-3 lg:gap-20">
         {membros.map((membro) => {
           return (

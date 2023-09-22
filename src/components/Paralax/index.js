@@ -1,21 +1,21 @@
 import { useRef } from "react"
 import AboutTheBand from "../AboutTheBand"
 import './UnderTheSea.css'
-import { useScroll, useTransform, motion } from "framer-motion"
+import { useScroll, useTransform, motion, useMotionValueEvent } from "framer-motion"
+import Photos from "../Photos"
 
 const Paralax = () => {
 
     const ref = useRef(null)
     const {scrollYProgress} = useScroll({target:ref})
 
-    const wave = useTransform(scrollYProgress, [0,1], ["0%","-65%"])
+    const wave = useTransform(scrollYProgress, [0,1], ["0%","-60%"])
 
     return(
-        <div ref={ref}>
+        <div className="relative AAAAAA "  ref={ref}>
             <AboutTheBand />
-
-            <motion.div style={{y:wave}} className="svg">
-                
+            <Photos />
+            <motion.div style={{y:wave}} className="svg relative">
             </motion.div>
         </div>
     )

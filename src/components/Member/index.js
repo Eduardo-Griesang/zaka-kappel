@@ -8,7 +8,7 @@ const Member = ({ name, func, bio, view, id, changeView }) => {
   return (
     <div className="flex flex-col items-center lg:relative">
       <img
-        className="rounded-full w-40 align-super hover:cursor-pointer"
+        className="rounded-full w-40 align-super hover:cursor-pointer z-30"
         src={membro}
         alt="membro da banda"
         onClick={() => changeV()}

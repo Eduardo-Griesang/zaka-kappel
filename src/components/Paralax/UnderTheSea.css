@@ -2,8 +2,13 @@
     background-image: url(../../assets/imgs/waveFinal.svg);
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: bottom;
+    background-position-y: bottom;
     object-fit: cover;
-    height: 100vh;
-    z-index: 20;
+    height: 150vh;
+    width: 100%;
+    z-index: 50;
+}
+
+.AAAAAA{
+    max-height: 200vh;
 }
