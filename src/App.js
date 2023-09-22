@@ -1,11 +1,9 @@
 import './App.css';
-import Header from './components/Header';
+import LandingPage from './pages/LandingPage';
 
 function App() {
   return (
-    <body className=' bg-black- '>
-      <Header />
-    </body>
+    <LandingPage />
   );
 }
 
