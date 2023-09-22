@@ -1,0 +1,9 @@
+.svg{
+    background-image: url(../../assets/imgs/waveFinal.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    object-fit: cover;
+    height: 100vh;
+    z-index: 20;
+}

@@ -1,12 +1,12 @@
-import AboutTheBand from "../../components/AboutTheBand";
 import Header from "../../components/Header";
+import Paralax from "../../components/Paralax";
 
 const LandingPage = () => {
   return (
-    <section>
+    <>
       <Header />
-      <AboutTheBand />
-    </section>
+      <Paralax />
+    </>
   );
 };
 

@@ -5,6 +5,9 @@ module.exports = {
     "./src/components/Header/index.js",
     "./src/components/AboutTheBand/index.js",
     "./src/components/Member/index.js",
+    "./src/components/UnderTheSea/index.js",
+    "./src/components/Paralax/index.js",
+    "./src/components/pages/LandingPage/index.js",
   ],
   theme: {
     fontFamily: {
@@ -18,7 +21,11 @@ module.exports = {
       '8.5xl': '7rem',
       '10xl': '10rem'
     },
-    extend: {},
+    extend: {
+      backgroundImage : {
+        wave: "./src/assets/imgs/waves.svg"
+      }
+    },
   },
   plugins: [],
 }
