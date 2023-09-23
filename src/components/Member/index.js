@@ -6,7 +6,7 @@ const Member = ({ name, func, bio, view, id, changeView }) => {
   }
 
   return (
-    <div className="flex flex-col items-center lg:relative">
+    <div className="flex flex-col items-center lg:relative z-30">
       <img
         className="rounded-full w-40 align-super hover:cursor-pointer z-30"
         src={membro}

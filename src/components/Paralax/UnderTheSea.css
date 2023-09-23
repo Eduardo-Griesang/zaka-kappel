@@ -4,11 +4,47 @@
     background-size: 100%;
     background-position-y: bottom;
     object-fit: cover;
-    height: 150vh;
+    height: 40vh;
     width: 100%;
-    z-index: 50;
+    z-index: 20;
 }
 
-.AAAAAA{
-    max-height: 200vh;
+.gradient{
+    background: linear-gradient(#fff 75.45%, rgb(12 74 110) 25%);
+}
+
+@media screen and (min-width: 768px) {
+    .svg{
+        height: 47vh;
+    }
+    .gradient{
+        background: linear-gradient(#fff 60.9%, rgb(12 74 110) 25%);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .svg{
+        height: 61.5vh;
+    }
+    .gradient{
+        background: linear-gradient(#fff 62.9%, rgb(12 74 110) 28%);
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .svg{
+        height: 74.5vh;
+    }
+    .gradient{
+        background: linear-gradient(#fff 61.2%, rgb(12 74 110) 28%);
+    }
+}
+
+@media screen and (min-width: 1536px) {
+    .svg{
+        height: 82vh;
+    }
+    .gradient{
+        background: linear-gradient(#fff 57.5%, rgb(12 74 110) 28%);
+    }
 }
