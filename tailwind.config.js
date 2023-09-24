@@ -8,6 +8,8 @@ module.exports = {
     "./src/components/UnderTheSea/index.js",
     "./src/components/Paralax/index.js",
     "./src/components/Photos/index.js",
+    "./src/components/Music/index.js",
+    "./src/components/Footer/index.js",
     "./src/components/pages/LandingPage/index.js",
   ],
   theme: {
