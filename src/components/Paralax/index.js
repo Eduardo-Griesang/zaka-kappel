@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react"
 import AboutTheBand from "../AboutTheBand"
 import './UnderTheSea.css'
-import { useScroll, useTransform, motion, useMotionValueEvent } from "framer-motion"
+import { useScroll, useTransform, motion } from "framer-motion"
 import Photos from "../Photos"
 import useWindowDimensions from "../useWindowDimensions"
 
@@ -15,7 +15,7 @@ const Paralax = () => {
     useEffect(() =>{
         if(width >= 768){
             setStart("-30%")
-            setEnd("-152%")
+            setEnd("-135%")
         }
     })
 

@@ -10,9 +10,9 @@ const AboutTheBand = () => {
 
   const membros = [
     {
-      nome: "Zaka Kappel",
-      função: "Vocalista",
-      bio: "Zaka tem 25 anos e começou a banda em 2019, com seu background de surf e skate, traz essa vibe para os palcos.",
+      nome: "Nome",
+      função: "Função",
+      bio: "Breve biografia...Breve biografia...Breve biografia...Breve biografia...Breve biografia...",
       view: membro1,
       setView: setMembro1,
       id: 1,
