@@ -9,19 +9,27 @@ const Footer = () => {
             </h3>
             <ul className="flex gap-7">
                 <li>
-                    <a href="https://open.spotify.com/intl-pt/artist/068E6kBBn7TnyjnOD3Hymr?si=IMVgZtsgQKGJ3qgcnf4K8A" target="_blank"><FontAwesomeIcon className="hover:scale-110 hover:cursor-pointer" icon={faSpotify} style={{color: "#f4f4f5",}} size="2xl" /></a>
+                    <a href="https://open.spotify.com/intl-pt/artist/068E6kBBn7TnyjnOD3Hymr?si=IMVgZtsgQKGJ3qgcnf4K8A" target="_blank" aria-label="Spotfy">
+                        <FontAwesomeIcon className="hover:scale-110 hover:cursor-pointer" icon={faSpotify} style={{color: "#f4f4f5",}} size="2xl" />
+                    </a>
                 </li>
                 
                 <li>
-                    <a href="https://www.instagram.com/zakakappel/" target="_blank"><FontAwesomeIcon className="hover:scale-110 hover:cursor-pointer" icon={faInstagram} style={{color: "#f4f4f5",}} size="2xl" /></a>
+                    <a href="https://www.instagram.com/zakakappel/" target="_blank" aria-label="Instagram">
+                        <FontAwesomeIcon className="hover:scale-110 hover:cursor-pointer" icon={faInstagram} style={{color: "#f4f4f5",}} size="2xl" />
+                    </a>
                 </li>
                 
                 <li>
-                    <a href="https://www.tiktok.com/@zakakappel?lang=en" target="_blank"><FontAwesomeIcon className="hover:scale-110 hover:cursor-pointer" icon={faTiktok} style={{color: "#f4f4f5",}} size="2xl" /></a>
+                    <a href="https://www.tiktok.com/@zakakappel?lang=en" target="_blank" aria-label="Tik Tok">
+                        <FontAwesomeIcon className="hover:scale-110 hover:cursor-pointer" icon={faTiktok} style={{color: "#f4f4f5",}} size="2xl" />
+                    </a>
                 </li>
                 
                 <li>
-                    <a href="https://www.youtube.com/@ZAKAband" target="_blank"><FontAwesomeIcon className="hover:scale-110 hover:cursor-pointer" icon={faYoutube} style={{color: "#f4f4f5",}} size="2xl" /></a>
+                    <a href="https://www.youtube.com/@ZAKAband" target="_blank" aria-label="Youtube">
+                        <FontAwesomeIcon className="hover:scale-110 hover:cursor-pointer" icon={faYoutube} style={{color: "#f4f4f5",}} size="2xl" />
+                    </a>
                 </li>
             </ul>
         </footer>
