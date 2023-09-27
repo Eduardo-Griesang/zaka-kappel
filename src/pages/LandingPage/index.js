@@ -11,7 +11,7 @@ const LandingPage = () => {
       <Header />
       <Paralax />
       <Suspense fallback={<div>Loading...</div>}>
-        <Music></Music>
+        <Music />
       </Suspense>
       <Footer />
     </>
