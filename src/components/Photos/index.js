@@ -26,10 +26,10 @@ const Photos = () => {
         transition={{duration:0.7}}
         animate={imgAnimate}
         >
-            <img className="px-1 rounded-xl md:max-w-xs lg:max-w-md" src={photo3} alt="Banda Zaka no show de abertura do Maroon 5" />
+            <img className="px-1 rounded-xl md:max-w-xs lg:max-w-md" src={photo3} alt="Banda Zaka no show de abertura do Maroon 5" loading="lazy" />
             <div className="flex items-center justify-center flex-col gap-3 ">
-                <img className="px-1 rounded-xl md:max-w-xs lg:max-w-md" src={photo2} alt="Banda Zaka no palco Pepsi on Stage" />
-                <img className="px-1 rounded-xl md:max-w-xs lg:max-w-md" src={photo1} alt="Banda Zaka tocando" />
+                <img className="px-1 rounded-xl md:max-w-xs lg:max-w-md" src={photo2} alt="Banda Zaka no palco Pepsi on Stage" loading="lazy" />
+                <img className="px-1 rounded-xl md:max-w-xs lg:max-w-md" src={photo1} alt="Banda Zaka tocando" loading="lazy" />
             </div>
         </motion.section>
     )

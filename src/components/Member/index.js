@@ -12,6 +12,7 @@ const Member = ({ name, func, bio, view, id, changeView }) => {
         src={membro}
         alt="membro da banda"
         onClick={() => changeV()}
+        loading="lazy"
       />
 
       <section
