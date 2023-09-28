@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import { motion, useAnimation, useInView } from "framer-motion";
 import Member from "../Member";
 
 const AboutTheBand = () => {
