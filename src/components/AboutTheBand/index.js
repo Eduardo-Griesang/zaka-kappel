@@ -10,8 +10,8 @@ const AboutTheBand = () => {
 
   const membros = [
     {
-      nome: "Nome",
-      função: "Função",
+      nome: "Zaka Kappel",
+      função: "Vocalista",
       bio: "Breve biografia...Breve biografia...Breve biografia...Breve biografia...Breve biografia...",
       view: membro1,
       setView: setMembro1,
