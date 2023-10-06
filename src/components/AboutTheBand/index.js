@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import Member from "../Member";
 
@@ -50,10 +50,39 @@ const AboutTheBand = () => {
     });
   }
 
+  const bandRef = useRef(null)
+  const bandInView = useInView(bandRef, {once: true})
+  const animateText = useAnimation()
+
+  useEffect(()=>{
+    if(bandInView){
+      animateText.start("visible")
+    }
+  },[bandInView])
+
   return (
-    <motion.div className="flex flex-col justify-center items-center lg:pb-4 z-0">
-      <h2 className="py-5 font-body text-xl lg:py-14">Conheça a banda:</h2>
-      <div className="flex flex-col lg:flex-row justify-center items-center gap-3 lg:gap-20">
+    <div className="flex flex-col justify-center items-center lg:pb-4 z-0" ref={bandRef}>
+      <motion.h2 
+      className="py-5 font-body text-xl lg:py-14"
+      variants={{
+        hidden : {opacity: 0, y: 30},
+        visible : {opacity: 1, y: 0}
+      }}
+      initial = "hidden"
+      transition={{duration:0.7}}
+      animate = {animateText}
+      >
+        Conheça a banda:
+      </motion.h2>
+      <motion.div className="flex flex-col lg:flex-row justify-center items-center gap-3 lg:gap-20"
+      variants={{
+        hidden : {opacity: 0, x: -50},
+        visible : {opacity: 1, x:0}
+      }}
+      initial = "hidden"
+      transition={{duration:0.7}}
+      animate = {animateText}
+      >
         {membros.map((membro) => {
           return (
             <Member
@@ -67,8 +96,8 @@ const AboutTheBand = () => {
             />
           );
         })}
-      </div>
-    </motion.div>
+      </motion.div>
+    </div>
   );
 };
 

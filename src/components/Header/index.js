@@ -14,7 +14,7 @@ const Header = () => {
     },[inView])
 
     return (
-        <div className="flex flex-col justify-center items-center bg-gradient-to-br from-amber-300 from-20% to-teal-400 to-70% h-screen" ref={refE}>
+        <div className="flex flex-col justify-center items-center bg-gradient-to-br from-amber-300 from-20% to-teal-400 to-70% h-screen mb-2" ref={refE}>
             <p className="font-body">
                 Do Brasil para o mundo!
             </p>
