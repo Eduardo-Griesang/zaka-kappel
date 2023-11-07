@@ -19,8 +19,8 @@ const Photos = () => {
     return (
         <motion.section className="flex items-center justify-center flex-col gap-3 pt-20 pb-10 lg:pb-32 xl:pb-60 2xl:pb-72 md:flex-row md:justify-center" ref={imgRef}
         variants={{
-            hidden:{opacity:0, x:-50},
-            visible:{opacity:1, x:0}
+            hidden:{opacity:0, y:100},
+            visible:{opacity:1, y:0}
         }}
         initial="hidden"
         transition={{duration:0.7}}
