@@ -11,7 +11,7 @@ const Member = ({ name, func, bio, view, id, changeView }) => {
         className="rounded-full w-40 align-super hover:cursor-pointer z-30"
         src={membro}
         alt="membro da banda"
-        onClick={() => changeV()}
+        onMouseOver={() => changeV()}
         loading="lazy"
       />
 
