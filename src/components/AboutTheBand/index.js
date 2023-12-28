@@ -1,6 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import Member from "../Member";
+import membroPhoto1 from "../../assets/imgs/membro da banda1.jpg"
+import membroPhoto2 from "../../assets/imgs/membro da banda2.png"
+import membroPhoto3 from "../../assets/imgs/membro da banda3.png"
 
 const AboutTheBand = () => {
 
@@ -10,6 +13,7 @@ const AboutTheBand = () => {
 
   const membros = [
     {
+      src: membroPhoto1,
       nome: "Zaka Kappel",
       função: "Vocalista",
       bio: "Breve biografia...Breve biografia...Breve biografia...Breve biografia...Breve biografia...",
@@ -18,6 +22,7 @@ const AboutTheBand = () => {
       id: 1,
     },
     {
+      src: membroPhoto2,
       nome: "Nome",
       função: "Função",
       bio: "Breve biografia...Breve biografia...Breve biografia...Breve biografia...Breve biografia...",
@@ -26,6 +31,7 @@ const AboutTheBand = () => {
       id: 2,
     },
     {
+      src: membroPhoto3,
       nome: "Nome",
       função: "Função",
       bio: "Breve biografia...Breve biografia...Breve biografia...Breve biografia...Breve biografia...Breve biografia...",
@@ -37,7 +43,6 @@ const AboutTheBand = () => {
 
   function changeView(id) {
     membros.forEach((mem) => {
-      console.log(id);
       if (mem.id === id) {
         if(mem.view === ""){
             mem.setView("hidden")
@@ -86,6 +91,7 @@ const AboutTheBand = () => {
         {membros.map((membro) => {
           return (
             <Member
+              src={membro.src}
               name={membro.nome}
               func={membro.função}
               bio={membro.bio}

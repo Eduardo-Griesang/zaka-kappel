@@ -1,6 +1,4 @@
-import membro from "../../assets/imgs/membro da banda.jpg";
-
-const Member = ({ name, func, bio, view, id, changeView }) => {
+const Member = ({ name, src, func, bio, view, id, changeView }) => {
   function changeV() {
     changeView(id);
   }
@@ -9,7 +7,7 @@ const Member = ({ name, func, bio, view, id, changeView }) => {
     <div className="flex flex-col items-center lg:relative z-30">
       <img
         className="rounded-full w-40 align-super hover:cursor-pointer z-30"
-        src={membro}
+        src={src}
         alt="membro da banda"
         onMouseOver={() => changeV()}
         loading="lazy"
